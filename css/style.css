@@ -1,0 +1,92 @@
+*{
+  margin:0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* BODY */
+
+body{
+  animation: gradient 7s ease alternate infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23e6d5, #23d5ab) no-repeat;
+  background-size: 300% 300%;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  padding-top: 5%;
+
+}
+
+@keyframes gradient {
+
+  0%{
+   background-position: 0 50%;
+  }
+
+  50%{
+    background-position: 100% 50%;
+
+  }
+
+  100%{
+    background-position: 0 50%;
+
+  }
+}
+
+/* FIM BODY */
+
+
+
+.animacao-1{
+  animation:is-bouncing 1s ease alternate infinite;
+  
+  height: 30vh;
+}
+
+img{
+  width: 60px;
+  height: 60px;
+}
+
+@keyframes is-bouncing {
+  to {
+    transform: translateY(30px);
+  }
+}
+
+
+.animacao-3, .animacao-4{
+ 
+  height: 30vh;
+}
+
+
+.loader{
+  animation: is-rotating 1s infinite;
+  border: 10px solid black;
+  border-top-color:#51d4db;
+  height: 60px;
+  width: 60px;
+}
+
+
+@keyframes is-rotating {
+  to{
+    transform: rotate(1turn);
+  }
+}
+
+
+
+.loader-radius{
+  animation: is-rotating 1s infinite;
+  border: 10px solid black;
+  border-top-color:#51d4db;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
